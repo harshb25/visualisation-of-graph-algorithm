@@ -31,4 +31,19 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+function mouseClicked() {
+  if(mouseX > 0) {
+    let clickCoords = [mouseX, mouseY]
+    drawingMachine.addPoint(clickCoords);
+    drawingMachine.addLine(clickCoords);
+  }
+}
 
+function keyPressed() {
+  if(keyCode === 13) {
+    drawingMachine.generateGraphArray();
+  }
+  if(keyCode === 27) {
+    drawingMachine.breakLine();
+  }
+}
