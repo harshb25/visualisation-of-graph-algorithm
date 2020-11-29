@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="./p5.min.js"></script>
+    <script src="./drawingMachine.js"></script>
+    <script src="./graphCalculator.js"></script>
+    <script src="./sketch.js"></script>
+
+
+  </head>
+  <body style="margin: 0; padding: 0; overflow: hidden;">
+      <div id="up" style="width: 10vw; max-width: 10vw; height: 100vh; float: left; background-color: black; color:white;">
+        press <strong>ESC</strong> to disconnect path
+        <hr></hr>
+        <p style="margin-bottom: 1vh"> Calculate the shortest route</p>
+        From: <input type="number" id="from" style="width: 90%;">
+        To: <input type="number" id="to" style="width: 90%;">
+        <button id="calculate" style="width: 100%; margin-top:1vh;">Calculate</button>
+        <hr></hr>
+        <p>Generate graph array from visualisation</p>
+        <button id="generate" style="width: 100%;">Generate</button>
+        <hr></hr>
+      </div>
+      <div id="p5" style="width: 90vw; height: 100vh; float: left;">
+      </div>
+  </body>
+</html>
